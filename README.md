@@ -1,37 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>
-        Kim lim 
-    </title>    
-    <body background="C:\Users\CSLab\Pictures\gQSAMah.webp"> 
-       
-       <h1 Style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:rgb(250, 84, 7)"> kim lim, <i>a leading <u>electronic company </u></i> </h1>
-       <hr>
-       <marquee width="100%" height="80px" bgcolor="yellow"  direction "down" 
-       behaviour ="side"> <h2><i>&#128512 Explore all <b>new products &#128512</b></i></h2></marquee>
-        <h3 style="color:rgb(192, 132, 248);text-align:center;">Phones,tablets,watch,more</h3>
-        <img src="C:\Users\CSLab\Pictures\OIP.jpg"     alt="C:\Users\CSLab\Pictures\OIP.jpg" style="width:600px;height:300px">
-      <ol>
-<li> Galaxy m<sub>2</sub> <ul> 
-<li>6gb/2<sup>8</sup>gb</li>
-<li>exonys 2330</li>
-</ul>   price:<del>$45999</del> $42000</ul>
-<li> kine jack <ul> 
-    <li>8gb/2<sup>9</sup>gb</li>
-    <li>snap dragon 300</li>
-    </ul>    price: 60000</ul>
-
-    </ol>
-<p style="text-align:center;"> Don't miss  out on the latest technology.<br>
-     Get your hands on our<small> new range </small> of electronic devices.</p>
-
-    <h4 style="text-align:center;"><i>Subscribe now</i></h4>
-<dl>
-    <dt>Electronic computer</dt>
-    <dd>An electronic computer is a machine that performs calculations automatically1. It is an electronic device that manipulates information, or data
-</dl>
-
-    </body>
-     
-</html># GaneshGautam.github.io
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=100">
+    <title>Ocean Theme</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #17aae4; /* Sky Blue */
+            overflow: hidden;
+        }
+        #ocean {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, #87CEEB 0%, #1E90FF 100%); /* Gradient from Sky Blue to Royal Blue */
+            position: relative;
+        }
+        #sun {
+            width: 200px;
+            height: 200px;
+            background-color: #dad23c; /* Gold */
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .fish {
+            width: 100px;
+            height: 50px;
+            background: #080606; /* Light Salmon */
+            position: absolute;
+            bottom: 80px;
+            animation: swim 5s linear infinite alternate;
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+        }
+        @keyframes swim {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(80vw); }
+        }
+        .bird {
+            width: 50px;
+            height: 30px;
+            background: #f21111; /* White Smoke */
+            position: absolute;
+            top: 20%;
+            animation: fly 8s linear infinite alternate;
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+        }
+        @keyframes fly {
+            0% { transform: translateX(-100px) translateY(-50px); }
+            100% { transform: translateX(120vw) translateY(-100px); }
+        }
+        #mountain {
+            width: 50%;
+            height: 50%;
+            background-size: cover;
+            position: absolute;
+            top: 50;
+            right: 10;
+            animation: moveup 5s linear infinite alternate;
+        }
+        @keyframes moveup {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+    </style>
+</head>
+<body>
+    <div id="ocean">
+        <div id="sun"></div>
+        <div class="fish" style="left: 10%; bottom: 60px;"></div>
+        <div class="fish" style="left: 15%; bottom: 120px;"></div>
+        <div class="fish" style="left: 40%; bottom: 100px;"></div>
+        <div class="fish" style="left: 90%; bottom: 140px;"></div>
+        <div class="bird" style="left: 10%;"></div>
+        <div class="bird" style="left: 20%;"></div>
+        <div class="bird" style="left: 30%;"></div>
+        <div class="bird" style="left: 72%;"></div>
+        <div class="bird" style="left: 95%;"></div>
+        <div id="mountain"></div>
+    </div>
+</body>
+</html>
