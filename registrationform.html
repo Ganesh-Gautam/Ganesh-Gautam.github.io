@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KESHAV MAHAVIDYALAYA  | Registration Form</title>
+
+<style>
+    body {
+        background-image: url('image/Screenshot\ 2024-03-28\ 204017.png');
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="password"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #2fd2db;
+        color: rgb(221, 157, 157);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    input[type="submit"]:hover {
+        background-color: #4556a0;
+    }
+</style>
+</head>
+<body>
+
+<form id="myForm">
+    <h2>Registration form</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="coursey">Course / year</label>
+    <input type="text" id="coursey" name="coursey" required>
+    <label for="age">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <label for="rollNumber">Enrollment Number:</label>
+    <input type="text" id="enrollNumber" name="enrollNumber" required>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var coursey = document.getElementById("coursey").value;
+        var dob= document.getElementById("dob").value;
+        var password = document.getElementById("password").value;
+        var email = document.getElementById("email").value;
+        var enrollNumber = document.getElementById("enrollNumber").value;
+        
+        console.log("Name: " + name);
+        console.log("Course and year : "+coursey)
+        console.log("Date of Birth : " + dob);
+        console.log("Password: " + password);
+        console.log("Email: " + email);
+        console.log("Enrollment Number: " + emrollNumber);
+    });
+</script>
+
+</body>
+</html>
